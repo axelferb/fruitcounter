@@ -7,36 +7,34 @@ submitButton.addEventListener("click", getInputValue);
 function getInputValue() {
     var inputTextValue = inputText.value;
     var inputNumberValue = inputNumber.value;
-    console.log(inputTextValue);
-    console.log(inputNumberValue);
     outputChange(inputNumberValue, inputTextValue);
 };
 
 function outputChange(inputNumberValue, inputTextValue) {
-    var areIs = ""
+    var areOrIs = ""
 
     if (inputNumberValue == 1) {
-        areIs = "is";
+        areOrIs = "is";
         outputDiv.innerHTML +=
             `
         <p>
-        There ${areIs + " " + inputNumberValue + " " + inputTextValue}
+        There ${areIs} ${inputNumberValue} ${inputTextValue}
         </p>
         `
     }
 
     if (inputNumberValue > 1) {
-        areIs = "are"
+        areOrIs = "are"
         outputDiv.innerHTML +=
             `
         <p>
-        There ${areIs + " " + inputNumberValue + " " + inputTextValue + "s"}
+        There ${areIs} ${inputNumberValue} ${inputTextValue}
         </p>
         `
     }
 
     if (inputNumberValue <= 0) {
-        areIs = "are"
+        areOrIs = "are"
         outputDiv.innerHTML +=
             `
         <p>
@@ -44,5 +42,4 @@ function outputChange(inputNumberValue, inputTextValue) {
         </p>
         `
     }
-
 }
