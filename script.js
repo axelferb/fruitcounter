@@ -38,7 +38,7 @@ function outputChange(inputNumberValue, inputTextValue) {
         outputDiv.innerHTML +=
             `
         <p>
-        There ${areIs + " " + "no" + " " + inputTextValue + "s"}
+        There ${areIs} ${inputNumberValue} ${inputTextValue}
         </p>
         `
     }
