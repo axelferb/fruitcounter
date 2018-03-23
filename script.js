@@ -18,7 +18,7 @@ function outputChange(inputNumberValue, inputTextValue) {
         outputDiv.innerHTML +=
             `
         <p>
-        There ${areIs} ${inputNumberValue} ${inputTextValue}
+        There ${areOrIs} ${inputNumberValue} ${inputTextValue}
         </p>
         `
     }
@@ -28,7 +28,7 @@ function outputChange(inputNumberValue, inputTextValue) {
         outputDiv.innerHTML +=
             `
         <p>
-        There ${areIs} ${inputNumberValue} ${inputTextValue}
+        There ${areOrIs} ${inputNumberValue} ${inputTextValue}
         </p>
         `
     }
@@ -38,7 +38,7 @@ function outputChange(inputNumberValue, inputTextValue) {
         outputDiv.innerHTML +=
             `
         <p>
-        There ${areIs} ${inputNumberValue} ${inputTextValue}
+        There ${areOrIs} ${inputNumberValue} ${inputTextValue}
         </p>
         `
     }
